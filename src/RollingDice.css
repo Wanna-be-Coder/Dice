@@ -1,0 +1,20 @@
+.rollButtonA {
+    height:100px;
+    width:200px;
+    background-color: purple;
+    color:white;
+    font-size:2rem;
+    margin:auto;
+    display:block;
+
+}
+.rollButtonI {
+    height:100px;
+    width:200px;
+    background-color:black;
+    color:white;
+    font-size:2rem;
+    margin:auto;
+    display:block;
+
+}

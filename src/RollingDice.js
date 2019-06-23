@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Dice from './Dice'
+import './RollingDice.css'
 
 class RollingDice extends Component {
 
@@ -28,7 +29,6 @@ class RollingDice extends Component {
 
 
         let containerStyle= {display:"flex", justifyContent:"space-around"};
-        let buttonStyle = {height:"100px",width:"200px",backgroundColor:"purple",color:"white",fontSize:"2rem",margin:"auto",display:"block"};
 
         return(
             <div>
@@ -36,7 +36,7 @@ class RollingDice extends Component {
                 <Dice num={this.state.dice1} rolling={this.state.isRolling} />
                 <Dice num={this.state.dice2} rolling={this.state.isRolling} />
             </div>
-            <button style={buttonStyle} onClick={this.roll} disabled={this.state.isRolling}>{ this.state.isRolling ? "Is Rolling":"Roll Dice"}</button>
+            <button  className={this.state.isRolling ? 'rollButtonI':'rollButtonA'} onClick={this.roll} disabled={this.state.isRolling}>{ this.state.isRolling ? "Is Rolling":"Roll Dice"}</button>
             </div>
         )
     }
