@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import './Dice.css'
 
 class Dice extends Component {
     render(){
@@ -7,7 +8,7 @@ class Dice extends Component {
         return(
 
             <div>
-                <i className={dice} style={diceStyle} ></i>
+                <i className={`${dice} ${this.props.rolling ? 'rolling':''}`} style={diceStyle} ></i>
             </div>
        
         )
